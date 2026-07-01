@@ -23,14 +23,12 @@
   body { background: var(--navy); color: var(--off-white); font-family: 'Inter', sans-serif; font-size: 16px; line-height: 1.7; }
   h1,h2,h3,h4 { font-family: 'Space Grotesk', sans-serif; color: var(--white); }
 
-  /* NAV */
   nav { position: fixed; top: 0; width: 100%; background: rgba(13,27,42,0.92); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); z-index: 100; padding: 0 2rem; display: flex; align-items: center; justify-content: space-between; height: 60px; }
   .nav-logo { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 18px; color: var(--teal); letter-spacing: -0.5px; }
   .nav-links { display: flex; gap: 2rem; list-style: none; }
   .nav-links a { color: var(--slate); text-decoration: none; font-size: 14px; font-weight: 500; transition: color 0.2s; letter-spacing: 0.3px; }
   .nav-links a:hover { color: var(--teal); }
 
-  /* HERO */
   .hero { min-height: 100vh; display: flex; align-items: center; padding: 6rem 2rem 4rem; max-width: 1100px; margin: 0 auto; gap: 4rem; }
   .hero-text { flex: 1; }
   .hero-eyebrow { font-size: 13px; font-weight: 500; letter-spacing: 3px; text-transform: uppercase; color: var(--teal); margin-bottom: 1.25rem; }
@@ -50,14 +48,12 @@
   .stat-val { font-family: 'Space Grotesk', sans-serif; font-size: 1.8rem; font-weight: 700; color: var(--teal); }
   .stat-lbl { font-size: 12px; color: var(--slate); text-transform: uppercase; letter-spacing: 0.5px; }
 
-  /* SECTIONS */
   section { padding: 6rem 2rem; max-width: 1100px; margin: 0 auto; }
   .section-label { font-size: 12px; font-weight: 600; letter-spacing: 4px; text-transform: uppercase; color: var(--teal); margin-bottom: 0.75rem; }
   .section-title { font-size: clamp(1.8rem, 3vw, 2.5rem); font-weight: 700; color: var(--white); margin-bottom: 1rem; letter-spacing: -0.5px; }
   .section-line { width: 48px; height: 3px; background: var(--teal); border-radius: 2px; margin-bottom: 3rem; }
   .divider { border: none; border-top: 1px solid var(--border); max-width: 1100px; margin: 0 auto; }
 
-  /* SKILLS */
   .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; }
   .skill-card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; transition: border-color 0.2s, transform 0.2s; }
   .skill-card:hover { border-color: var(--teal); transform: translateY(-2px); }
@@ -65,7 +61,6 @@
   .skill-tags { display: flex; flex-wrap: wrap; gap: 8px; }
   .tag { background: rgba(0,180,216,0.1); color: var(--teal); border: 1px solid rgba(0,180,216,0.2); border-radius: 4px; font-size: 12px; padding: 3px 10px; font-weight: 500; }
 
-  /* EXPERIENCE */
   .timeline { position: relative; padding-left: 2rem; }
   .timeline::before { content: ''; position: absolute; left: 0; top: 8px; bottom: 8px; width: 2px; background: linear-gradient(to bottom, var(--teal), transparent); }
   .timeline-item { position: relative; margin-bottom: 3rem; }
@@ -76,8 +71,8 @@
   .timeline-bullets { list-style: none; }
   .timeline-bullets li { font-size: 14px; color: var(--off-white); padding: 4px 0 4px 1.25rem; position: relative; opacity: 0.85; }
   .timeline-bullets li::before { content: '▸'; position: absolute; left: 0; color: var(--teal); font-size: 12px; top: 5px; }
+  .timeline-badge { display: inline-block; font-size: 11px; padding: 2px 10px; border-radius: 20px; background: rgba(0,180,216,0.1); color: var(--teal); border: 1px solid rgba(0,180,216,0.2); font-weight: 500; margin-bottom: 0.75rem; }
 
-  /* PROJECTS */
   .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
   .project-card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 1.75rem; display: flex; flex-direction: column; transition: border-color 0.2s, transform 0.2s; }
   .project-card:hover { border-color: var(--teal); transform: translateY(-3px); }
@@ -89,7 +84,6 @@
   .project-link { color: var(--teal); font-size: 13px; font-weight: 500; text-decoration: none; display: inline-flex; align-items: center; gap: 5px; margin-top: auto; }
   .project-link:hover { text-decoration: underline; }
 
-  /* CERTS */
   .certs-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem; }
   .cert-card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 1.25rem 1.5rem; display: flex; gap: 1rem; align-items: flex-start; transition: border-color 0.2s; }
   .cert-card:hover { border-color: var(--teal); }
@@ -98,7 +92,6 @@
   .cert-issuer { font-size: 12px; color: var(--slate); }
   .cert-date { font-size: 11px; color: var(--teal); margin-top: 4px; font-weight: 500; }
 
-  /* CONTACT */
   .contact-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
   .contact-text p { color: var(--slate); font-size: 15px; line-height: 1.8; margin-bottom: 2rem; }
   .contact-links { display: flex; flex-direction: column; gap: 1rem; }
@@ -106,7 +99,6 @@
   .contact-link:hover { border-color: var(--teal); color: var(--teal); }
   .contact-icon { width: 36px; height: 36px; border-radius: 8px; background: rgba(0,180,216,0.1); display: flex; align-items: center; justify-content: center; font-size: 16px; }
 
-  /* FOOTER */
   footer { text-align: center; padding: 2rem; border-top: 1px solid var(--border); font-size: 13px; color: var(--slate); }
 
   @media (max-width: 768px) {
@@ -140,7 +132,7 @@
     <p class="hero-eyebrow">Data Analyst · Bengaluru, India</p>
     <h1 class="hero-name">Vinayak <span>M</span></h1>
     <p class="hero-role">Turning data into decisions · Power BI · SQL · Python · Excel</p>
-    <p class="hero-summary">Senior data professional with 5+ years in healthcare operations at Carelon Global Solutions (Elevance Health). Specialising in Power BI dashboards, SQL analytics, and Excel VBA automation. Certified by Great Learning and ExcelR with distinction.</p>
+    <p class="hero-summary">Senior data professional with 5+ years in healthcare operations at Carelon Global Solutions (Elevance Health). Data Analyst Intern at AIvariant (2026). Specialising in Power BI dashboards, SQL analytics, and Excel VBA automation. Certified by Great Learning, ExcelR (Distinction), and AIvariant.</p>
     <div class="hero-cta">
       <a href="#projects" class="btn btn-primary">View Projects →</a>
       <a href="https://www.linkedin.com/in/vinayak-m-b78196ab" target="_blank" class="btn btn-outline">LinkedIn ↗</a>
@@ -149,7 +141,7 @@
     <div class="hero-stats">
       <div><div class="stat-val">5+</div><div class="stat-lbl">Years exp.</div></div>
       <div><div class="stat-val">3</div><div class="stat-lbl">Projects</div></div>
-      <div><div class="stat-val">2</div><div class="stat-lbl">Certifications</div></div>
+      <div><div class="stat-val">3</div><div class="stat-lbl">Certifications</div></div>
       <div><div class="stat-val">★</div><div class="stat-lbl">Distinction</div></div>
     </div>
   </div>
@@ -217,6 +209,7 @@
   <h2 class="section-title">Work Experience</h2>
   <div class="section-line"></div>
   <div class="timeline">
+
     <div class="timeline-item">
       <div class="timeline-dot"></div>
       <div class="timeline-period">Apr 2023 – Feb 2026</div>
@@ -229,9 +222,10 @@
         <li>Automated reporting workflows using Excel VBA Macros reducing manual effort significantly</li>
       </ul>
     </div>
+
     <div class="timeline-item">
       <div class="timeline-dot" style="background:var(--slate);box-shadow:none;"></div>
-      <div class="timeline-period">Dec 2020 – Mar 2024</div>
+      <div class="timeline-period">Dec 2020 – Apr 2023</div>
       <div class="timeline-role">Claims Associate</div>
       <div class="timeline-company">Carelon Global Solutions · Bengaluru</div>
       <ul class="timeline-bullets">
@@ -240,6 +234,20 @@
         <li>Provided customer service support responding to claim status and coverage inquiries</li>
       </ul>
     </div>
+
+    <div class="timeline-item">
+      <div class="timeline-dot" style="background:var(--teal);box-shadow:0 0 0 3px rgba(0,180,216,0.2);"></div>
+      <div class="timeline-period">Mar 2026 – Jun 2026</div>
+      <div class="timeline-role">Data Analyst Intern</div>
+      <div class="timeline-company">AIvariant · Bengaluru</div>
+      <span class="timeline-badge">Internship · Certificate ID: AIV/25-26/Q2/06/19410</span>
+      <ul class="timeline-bullets">
+        <li>Developed end-to-end Insurance Analytics project — designed a MySQL database with 11 tables covering brokerage, invoices, opportunities, budgets, and client dimensions</li>
+        <li>Built Power BI dashboards tracking brokerage revenue, policy renewal performance, sales pipeline KPIs, and account executive scorecards across 7 city branches</li>
+        <li>Automated reporting workflows using Excel VBA Macros and Power Pivot, reducing manual effort significantly</li>
+      </ul>
+    </div>
+
     <div class="timeline-item">
       <div class="timeline-dot" style="background:var(--slate);box-shadow:none;"></div>
       <div class="timeline-period">Jun 2019 – Aug 2019</div>
@@ -250,6 +258,7 @@
         <li>Generated weekly reports on sales activity and market trends</li>
       </ul>
     </div>
+
   </div>
 </section>
 
@@ -264,7 +273,7 @@
     <div class="project-card">
       <div class="project-icon">📊</div>
       <div class="project-title">Insurance Analytics Dashboard</div>
-      <div class="project-desc">End-to-end insurance business analytics covering SQL database design (11 tables), Power BI dashboards tracking brokerage revenue and KPIs, and Excel VBA automation across 7 city branches.</div>
+      <div class="project-desc">End-to-end insurance business analytics covering SQL database design (11 tables), Power BI dashboards tracking brokerage revenue and KPIs, and Excel VBA automation across 7 city branches. Completed as part of AIvariant internship.</div>
       <div class="project-tools">
         <span class="tool-tag">Power BI</span>
         <span class="tool-tag">MySQL</span>
@@ -322,6 +331,14 @@
         <div class="cert-name">Data Analyst Programme</div>
         <div class="cert-issuer">ExcelR, Bengaluru · Completed with Distinction</div>
         <div class="cert-date">May 2026 · ID: 34990/EXCELR/15052026</div>
+      </div>
+    </div>
+    <div class="cert-card">
+      <div class="cert-badge">🏅</div>
+      <div>
+        <div class="cert-name">Data Analyst Internship</div>
+        <div class="cert-issuer">AIvariant · Bengaluru</div>
+        <div class="cert-date">Jun 2026 · ID: AIV/25-26/Q2/06/19410</div>
       </div>
     </div>
     <div class="cert-card">
